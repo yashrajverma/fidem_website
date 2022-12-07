@@ -9,7 +9,10 @@ function App({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        {/* <script src="//unpkg.com/satellite.js/dist/satellite.min.js"></script> */}
+        <script
+          src="//unpkg.com/satellite.js/dist/satellite.min.js"
+          async
+        ></script>
 
         <title>Fidem</title>
       </Head>

@@ -13,7 +13,7 @@ const marker2 = {
 const demoMarkers = [marker1, marker2];
 
 const Globe = () => {
-  const initialSize = Math.min(window.innerWidth, window.innerHeight);
+  const initialSize = Math.min("100%", "100%");
   const [state, setState] = React.useState({
     width: initialSize,
     height: initialSize,

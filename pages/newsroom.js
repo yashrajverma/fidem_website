@@ -107,7 +107,7 @@ const Newsletter = () => {
           .fill(0)
           .map((ele, i) => (
             <div key={i} className="flex flex-col text-left mr-auto">
-              <img src="/globecard.png" className="rounded-md" />
+              <img src="/globecard.png" className="rounded-md" alt="" />
 
               <div className="mt-4">March 21, 2020</div>
 
@@ -131,7 +131,7 @@ const Newsletter = () => {
 
         <div className=" grid grid-cols-1 md:grid-cols-2 my-10 gap-5 px-4 md:w-[97%] text-white ">
           <div className="flex flex-col text-left w-[90%] mr-auto">
-            <img src="/globecard.png" className="rounded-md" />
+            <img src="/globecard.png" className="rounded-md" alt="" />
 
             <div className="mt-4">March 21, 2020</div>
 
@@ -149,6 +149,7 @@ const Newsletter = () => {
           <div>
             <div className="flex items-start text-left w-[90%] mr-auto">
               <img
+                alt=""
                 src="/globecard.png"
                 className="rounded-md w-[50%] object-contain"
               />
@@ -163,6 +164,7 @@ const Newsletter = () => {
 
             <div className="flex mt-3 items-start text-left w-[90%] mr-auto">
               <img
+                alt=""
                 src="/globecard.png"
                 className="rounded-md w-[50%] object-contain"
               />
@@ -177,6 +179,7 @@ const Newsletter = () => {
 
             <div className="flex mt-3 items-start text-left w-[90%] mr-auto">
               <img
+                alt=""
                 src="/globecard.png"
                 className="rounded-md w-[50%] object-contain"
               />
@@ -199,7 +202,7 @@ const Newsletter = () => {
           .fill(0)
           .map((ele, i) => (
             <div key={i} className="flex flex-col text-left mr-auto">
-              <img src="/globecard.png" className="rounded-md" />
+              <img src="/globecard.png" className="rounded-md" alt="" />
 
               <div className="mt-4">March 21, 2020</div>
 

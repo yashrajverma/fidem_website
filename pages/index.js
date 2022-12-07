@@ -28,6 +28,7 @@ import InfraLottie from "../public/lottie/Fidem website files/Infrastructure.jso
 import MobilityLottie from "../public/lottie/Fidem website files/Mobility.json";
 import ProductsLottie from "../public/lottie/Fidem website files/Products.json";
 import UnderWritingLottie from "../public/lottie/Fidem website files/Underwriting.json";
+import Image from "next/image";
 const getRandomCountry = () => {
   return COUNTRIES_DATA[Math.floor(Math.random() * COUNTRIES_DATA.length)];
 };
@@ -172,7 +173,7 @@ function Index() {
       </section>
 
       <section className="min-h-[90vh] mb-28 flex justify-center  items-center flex-col relative">
-        <img className="absolute bottom-0 right-0" src="/bg.png" />
+        <img className="absolute bottom-0 right-0" src="/bg.png" alt="" />
 
         <div className="flex justify-center flex-col z-10 text-4xl font-bold text-white items-center">
           <div> Digital Evolution of</div>
@@ -226,7 +227,7 @@ function Index() {
               </div>
             </div>
 
-            <img className="h-[120px]" src="/line.png" />
+            <img className="h-[120px]" src="/line.png" alt="" />
           </div>
 
           <div className="flex flex-col items-center">
@@ -249,7 +250,7 @@ function Index() {
               </div>
             </div>
 
-            <img className="h-[120px]" src="/line.png" />
+            <img className="h-[120px]" src="/line.png" alt="" />
           </div>
 
           <div className="flex flex-col items-center">
@@ -295,7 +296,7 @@ function Index() {
               </div>
             </div>
 
-            <img className="h-[120px]" src="/line.png" />
+            <img className="h-[120px]" src="/line.png" alt="" />
           </div>
 
           <div className="flex flex-col items-center">
@@ -318,7 +319,7 @@ function Index() {
               </div>
             </div>
 
-            <img className="h-[120px]" src="/line.png" />
+            <img className="h-[120px]" src="/line.png" alt="" />
           </div>
         </div>
         <div>
@@ -362,7 +363,7 @@ function Index() {
           {selected == 0 && (
             <div className="flex align-middle justify-items-center flex-wrap">
               <div className="text-left text-white mb-10 md:mb-0 w-screen  sm:w-[100%] lg:w-[50%] font-tabs">
-                Our platform's top stack consists of commercially available
+                Our platforms top stack consists of commercially available
                 products that, when combined with our underlying technology
                 design, allow you to go online in days rather than months. Our
                 expanding line of products includes telematics, travel, mobile,

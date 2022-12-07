@@ -20,7 +20,7 @@ const ContactUs = () => {
         <div className="flex mx-4 md:mx-24 my-8 md:my-14 flex-col md:flex-row">
           <div className="md:w-[40%]">
             <div className="bg-[#222222] rounded-md md:w-[90%] h-[29rem] justify-between flex items-center p-8 overflow-hidden">
-              <img src="/contactUs.png" />
+              <img src="/contactUs.png" alt="" />
             </div>
           </div>
 
