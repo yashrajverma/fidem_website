@@ -194,7 +194,7 @@ const AboutUs = () => {
               Hitesh Saini
               <a
                 href="https://www.linkedin.com/in/hitessh-saini-1b6753176/"
-                target="_blank"
+                target="blank"
                 className="mx-1 align-middle"
               >
                 <img
@@ -221,7 +221,7 @@ const AboutUs = () => {
               Carlos Miguel Vidal
               <a
                 href="https://www.linkedin.com/in/carlos-miguel-vidal/"
-                target="_blank"
+                target="blank"
                 className="mx-1 align-middle"
               >
                 <img
@@ -248,7 +248,7 @@ const AboutUs = () => {
               Patrick Kelahan
               <a
                 href="https://www.linkedin.com/in/patrickkelahan/"
-                target="_blank"
+                target="blank"
                 className="mx-1 align-middle"
               >
                 <img
@@ -275,7 +275,7 @@ const AboutUs = () => {
               Bhupesh P.
               <a
                 href="https://www.linkedin.com/in/bhupesh-p-581145111/"
-                target="_blank"
+                target="blank"
                 className="mx-1 align-middle"
               >
                 <img
@@ -303,7 +303,7 @@ const AboutUs = () => {
               Tarun Kumar
               <a
                 href="https://www.linkedin.com/in/tarunmottlia/"
-                target="_blank"
+                target="blank"
                 className="mx-1 align-middle"
               >
                 <img
