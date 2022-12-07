@@ -12,7 +12,7 @@ import { FreeMode, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import Globe from "./Globe";
+// import Globe from "./Globe";
 
 const services = [
   {
