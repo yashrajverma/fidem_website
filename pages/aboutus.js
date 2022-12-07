@@ -148,7 +148,7 @@ const AboutUs = () => {
         <div className="body">
           <div className="gradient-1"></div>
         </div>
-        <Globe className="z-2" />
+        {/* <Globe className="z-2" /> */}
       </section>
 
       {/* <section>
