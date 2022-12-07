@@ -21,7 +21,7 @@
     "swiper": "^8.4.5",
     "vec2": "^1.6.1",
     "three": "^0.146.0",
-    "@react-three/drei": "^9.39.0"
+    "@react-three/drei": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
