@@ -18,7 +18,6 @@ import Footer from "../components/footer";
 import dynamic from "next/dynamic";
 import { COUNTRIES_DATA } from "../data/countries";
 import HEX_DATA from "../data/countries_hex_data.json";
-import Lottie from "react-lottie-player";
 const EARTH_RADIUS_KM = 6371; // km
 const SAT_SIZE = 80; // km
 const TIME_STEP = 3 * 1000; // per frame\
