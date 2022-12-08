@@ -20,13 +20,7 @@ import { COUNTRIES_DATA } from "../data/countries";
 import HEX_DATA from "../data/countries_hex_data.json";
 const EARTH_RADIUS_KM = 6371; // km
 const SAT_SIZE = 80; // km
-const TIME_STEP = 3 * 1000; // per frame\
-import ClaimLottie from "../public/lottie/Fidem website files/Claim.json";
-import DistributionLottie from "../public/lottie/Fidem website files/Distribution.json";
-import InfraLottie from "../public/lottie/Fidem website files/Infrastructure.json";
-import MobilityLottie from "../public/lottie/Fidem website files/Mobility.json";
-import ProductsLottie from "../public/lottie/Fidem website files/Products.json";
-import UnderWritingLottie from "../public/lottie/Fidem website files/Underwriting.json";
+const TIME_STEP = 3 * 1000; // per frame
 import "@dotlottie/player-component";
 const getRandomCountry = () => {
   return COUNTRIES_DATA[Math.floor(Math.random() * COUNTRIES_DATA.length)];

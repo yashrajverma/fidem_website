@@ -154,7 +154,7 @@ const AboutUs = () => {
           autoplay
           loop
           style={{ height: "50%", width: "50%" }}
-        />
+        ></dotlottie-player>
       </section>
 
       {/* <section>

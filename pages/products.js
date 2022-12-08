@@ -43,7 +43,7 @@ const Products = () => {
           autoplay
           loop
           style={{ height: "100%", width: "50%" }}
-        />
+        ></dotlottie-player>
       </section>
 
       <section className="min-h-[70vh] relative flex md:flex-row flex-col-reverse">
