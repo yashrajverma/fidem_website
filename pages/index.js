@@ -21,7 +21,7 @@ import HEX_DATA from "../data/countries_hex_data.json";
 const EARTH_RADIUS_KM = 6371; // km
 const SAT_SIZE = 80; // km
 const TIME_STEP = 3 * 1000; // per frame
-import "@dotlottie/player-component";
+
 const getRandomCountry = () => {
   return COUNTRIES_DATA[Math.floor(Math.random() * COUNTRIES_DATA.length)];
 };

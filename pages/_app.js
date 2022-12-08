@@ -13,7 +13,7 @@ function App({ Component, pageProps }) {
           src="//unpkg.com/satellite.js/dist/satellite.min.js"
           async
         ></script>
-
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.js"></script>
         <title>Fidem</title>
       </Head>
       <Component {...pageProps} />
