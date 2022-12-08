@@ -38,7 +38,12 @@ const CarInspection = () => {
           alt=""
           src="comp.png"
         /> */}
-        <Lottie animationData={Mobility} play loop className="lottieFile" />
+        <dotlottie-player
+          src="https://lottie.host/465d4475-7818-471d-8632-0cb9d0fd9046/Fddg8Yckhp.lottie"
+          autoplay
+          loop
+          style={{ height: "100%", width: "50%" }}
+        />
       </section>
 
       <section className="min-h-[70vh] relative flex md:flex-row flex-col-reverse">

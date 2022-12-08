@@ -65,7 +65,7 @@ const AboutUs = () => {
       <section className="relative flex flex-col md:flex-row w-full md:h-[90vh] items-center overflow-hidden text-left text-[50px] text-white font-montserrat">
         <div className="md:w-[70%] w-full flex flex-col mt-[6rem] md:mt-[10rem] md:items-center md:justify-center">
           <div className="md:pl-36 px-3 flex flex-col">
-            <div className="inline-block max-w-xl text-left font-montserrat text-4xl md:text-[50px] font-semibold">
+            <div className="max-w-xl text-left font-montserrat text-5xl  font-semibold">
               We are building World's First blockchain Technology for Post sales
               services of Insurance for digital service experiance.
             </div>
@@ -149,6 +149,12 @@ const AboutUs = () => {
           <div className="gradient-1"></div>
         </div>
         {/* <Globe className="z-2" /> */}
+        <dotlottie-player
+          src="https://lottie.host/3ab6e98f-c77c-4332-a050-6921cf16373a/dKZaTuqoDq.lottie"
+          autoplay
+          loop
+          style={{ height: "50%", width: "50%" }}
+        />
       </section>
 
       {/* <section>

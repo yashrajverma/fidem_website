@@ -18,7 +18,7 @@ import Footer from "../components/footer";
 import dynamic from "next/dynamic";
 import { COUNTRIES_DATA } from "../data/countries";
 import HEX_DATA from "../data/countries_hex_data.json";
-import Lottie from "lottie-react";
+import Lottie from "react-lottie-player";
 const EARTH_RADIUS_KM = 6371; // km
 const SAT_SIZE = 80; // km
 const TIME_STEP = 3 * 1000; // per frame\
@@ -28,6 +28,7 @@ import InfraLottie from "../public/lottie/Fidem website files/Infrastructure.jso
 import MobilityLottie from "../public/lottie/Fidem website files/Mobility.json";
 import ProductsLottie from "../public/lottie/Fidem website files/Products.json";
 import UnderWritingLottie from "../public/lottie/Fidem website files/Underwriting.json";
+import "@dotlottie/player-component";
 const getRandomCountry = () => {
   return COUNTRIES_DATA[Math.floor(Math.random() * COUNTRIES_DATA.length)];
 };
@@ -198,7 +199,7 @@ function Index() {
         </div>
       </section>
 
-      <section className="mx-auto w-[90%]">
+      <section className="mx-auto w-[80%] my-32">
         <div className="flex justify-center text-center text-white font-semibold text-3xl">
           Insurance as a service stack
         </div>
@@ -322,45 +323,8 @@ function Index() {
           </div>
         </div>
         <div>
-          {selected == 2 && (
-            <div className="flex justify-center align-middle mx-auto flex-wrap">
-              <div className="text-left  text-white mb-10 md:mb-0 sm:w-screen lg:w-8/12 w-screen font-tabs">
-                An API-led distribution layer may embed and disseminate policies
-                over any channel thanks to our architecture. At every level of
-                the distribution stack, whether it be through direct
-                integrations, SDKs, chatbots, mini-apps, or white-labeled apps,
-                we operate and optimise. Customer onboarding is made simple by
-                our digital identification, KYC, and payments processes.
-              </div>
-
-              <Lottie
-                loop
-                animationData={DistributionLottie}
-                play
-                className="lottieFile2"
-              />
-            </div>
-          )}
-          {selected == 1 && (
-            <div className="flex align-middle justify-items-center  flex-wrap ">
-              <div className="text-left text-white mb-10 md:mb-0 sm:w-[100%] lg:w-[50%] font-tabs">
-                Using both internal and external data sources, our rating engine
-                enables insurers to rapidly underwrite risk and provide dynamic
-                pricing for each policy insured. Better recursive patterns form
-                as more data assemble, producing accurate risk assessment.
-              </div>
-
-              {/* <img src="/globecard.png" className="w-4/12" /> */}
-              <Lottie
-                loop
-                animationData={UnderWritingLottie}
-                play
-                className="lottieFile"
-              />
-            </div>
-          )}
           {selected == 0 && (
-            <div className="flex align-middle justify-items-center flex-wrap">
+            <div className="flex align-middle justify-between flex-wrap">
               <div className="text-left text-white mb-10 md:mb-0 w-screen  sm:w-[100%] lg:w-[50%] font-tabs">
                 Our platforms top stack consists of commercially available
                 products that, when combined with our underlying technology
@@ -370,17 +334,54 @@ function Index() {
                 support, and claims and assistance.
               </div>
 
-              <Lottie
+              <dotlottie-player
+                src="https://lottie.host/65276de9-f2fe-4594-ac5c-531bd5b5f6ad/Mu6RzDqGRQ.lottie"
+                autoplay
                 loop
-                animationData={ProductsLottie}
-                play
-                className="lottieFile"
+                style={{ height: "30%", width: "40%" }}
+              />
+            </div>
+          )}
+          {selected == 1 && (
+            <div className="flex align-middle justify-between flex-wrap ">
+              <div className="text-left text-white mb-10 md:mb-0 sm:w-[100%] lg:w-[50%] font-tabs">
+                Using both internal and external data sources, our rating engine
+                enables insurers to rapidly underwrite risk and provide dynamic
+                pricing for each policy insured. Better recursive patterns form
+                as more data assemble, producing accurate risk assessment.
+              </div>
+
+              {/* <img src="/globecard.png" className="w-4/12" /> */}
+              <dotlottie-player
+                src="https://lottie.host/d4da8510-8e77-4923-89d0-9cef666c66f8/i9zlQ5FSKO.lottie"
+                autoplay
+                loop
+                style={{ height: "30%", width: "30%" }}
               />
             </div>
           )}
 
+          {selected == 2 && (
+            <div className="flex justify-between align-middle mx-auto flex-wrap">
+              <div className="text-left  text-white mb-10 md:mb-0 sm:w-screen lg:w-6/12 w-screen font-tabs">
+                An API-led distribution layer may embed and disseminate policies
+                over any channel thanks to our architecture. At every level of
+                the distribution stack, whether it be through direct
+                integrations, SDKs, chatbots, mini-apps, or white-labeled apps,
+                we operate and optimise. Customer onboarding is made simple by
+                our digital identification, KYC, and payments processes.
+              </div>
+
+              <dotlottie-player
+                src="https://lottie.host/dc8c4359-ea18-47ec-8391-6c758b4321bb/yh0HucH5lj.lottie"
+                autoplay
+                loop
+                style={{ height: "40%", width: "40%" }}
+              />
+            </div>
+          )}
           {selected == 3 && (
-            <div className="flex align-middle justify-items-center flex-wrap">
+            <div className="flex align-middle justify-between flex-wrap">
               <div className="text-left text-white mb-10 md:mb-0  sm:w-[100%] lg:w-[50%] font-tabs">
                 Our engine manages all claims, whether parametric, assisted, or
                 self-service, using algorithmic triage protocols, video, and
@@ -390,27 +391,27 @@ function Index() {
                 claims journey.
               </div>
 
-              <Lottie
+              <dotlottie-player
+                src="https://lottie.host/c2f6a48c-3ca5-4a2a-bb47-b4aee1f4f913/jg6HD8w6Jh.lottie"
+                autoplay
                 loop
-                animationData={ClaimLottie}
-                play
-                className="lottieFile3"
+                style={{ height: "30%", width: "30%" }}
               />
             </div>
           )}
           {selected == 4 && (
-            <div className="flex align-middle justify-items-center flex-wrap">
+            <div className="flex align-middle justify-between flex-wrap">
               <div className="text-left text-white mb-10 md:mb-0  sm:w-[100%] lg:w-[50%] font-tabs">
                 Our infrastructure is cloud-based and offers security,
                 scalability, and reliability. Our systems are extremely scalable
                 and redundant, and they function with 99.8%+ uptime.
                 Fidem.ai has earned the highest compliance certifications.
               </div>
-              <Lottie
+              <dotlottie-player
+                src="https://lottie.host/8e7915b1-bb25-482f-a4d9-2f8231ae2407/6aGk3VFJwM.lottie"
+                autoplay
                 loop
-                animationData={InfraLottie}
-                play
-                className="lottieFile2 "
+                style={{ height: "40%", width: "50%" }}
               />
             </div>
           )}
@@ -433,7 +434,7 @@ function Index() {
         </div> */}
       </section>
 
-      <section className="md:min-h-[50vh] mt-20 md:mt-0 px-4 flex justify-center align-middle flex-col">
+      <section className="md:min-h-[50vh] mt-20 md:mt-0 px-4 flex justify-between align-middle flex-col">
         <div className="flex justify-center text-center font-semibold text-white text-3xl">
           <h>Remove Insurance Complexity</h>
         </div>
@@ -447,11 +448,17 @@ function Index() {
             Day One thanks to a plugged-in ecosystem of repair networks and
             providers.
           </p>
-          <Lottie
+          {/* <Lottie
             loop
             animationData={MobilityLottie}
             play
             className="lottieFile3 "
+          /> */}
+          <dotlottie-player
+            src="https://lottie.host/465d4475-7818-471d-8632-0cb9d0fd9046/Fddg8Yckhp.lottie"
+            autoplay
+            loop
+            style={{ height: "40%", width: "40%" }}
           />
         </div>
       </section>
