@@ -114,3 +114,31 @@
     align-items: center;
     display: flex;
 }
+
+.products-list {
+    display: none;
+}
+
+.product:hover .products-list {
+    display: block;
+    position: absolute;
+}
+
+.list-none {
+    display: block;
+    position: absolute;
+    background-color: #0F1A2F;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 0 2px 1px rgba(133, 178, 241, 0.5);
+    border-radius: 10px;
+    width: 16rem;
+}
+
+.products-list:hover .list-none {
+    display: block;
+}
+
+.img-filter {
+    filter: invert(1) brightness(0);
+
+}

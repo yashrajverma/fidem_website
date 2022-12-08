@@ -6,7 +6,7 @@ import Header from "../components/header";
 import { IoLogoApple, IoLogoGooglePlaystore, IoWarning } from "react-icons/io5";
 import Footer from "../components/footer";
 import Mobility from "../public/lottie/Fidem website files/Mobility.json";
-import Lottie from "react-lottie-player";
+import Lottie from "lottie-react";
 const HospitalManagement = () => {
   return (
     <div className="w-full -z-30 bg-[#233c6d] overflow-hidden">

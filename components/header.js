@@ -29,12 +29,55 @@ const Header = () => {
             Home
           </div>{" "}
           <div
-            className={`font-medium mr-6 inline-block cursor-pointer ${
-              router.pathname === "/products" && "text-[#EB222A]"
-            }`}
-            onClick={() => router.push("/products")}
+            className={`product font-medium mr-6 inline-block cursor-pointer`}
+            // onClick={() => router.push("/products")}
           >
             Products
+            <div className="products-list">
+              <ul className="list-none flex-column">
+                <li
+                  onClick={() => router.push("/claimManagement")}
+                  className={`list-item hover:bg-white hover:rounded-sm px-2 my-2 hover:text-red-700 ${
+                    router.pathname === "/claimManagement" && "text-[#EB222A]"
+                  }`}
+                >
+                  Claim Management
+                </li>
+                <li
+                  onClick={() => router.push("/hospitalManagement")}
+                  className={`list-item hover:bg-white hover:rounded-sm px-2 my-2 hover:text-red-700 ${
+                    router.pathname === "/hospitalManagement" &&
+                    "text-[#EB222A]"
+                  }`}
+                >
+                  Hospital Management
+                </li>
+                <li
+                  onClick={() => router.push("/garageManagement")}
+                  className={`list-item hover:bg-white hover:rounded-sm px-2 my-2 hover:text-red-700 ${
+                    router.pathname === "/garageManagement" && "text-[#EB222A]"
+                  }`}
+                >
+                  Garage Management
+                </li>
+                <li
+                  onClick={() => router.push("/OCR")}
+                  className={`list-item hover:bg-white hover:rounded-sm px-2 my-2 hover:text-red-700 ${
+                    router.pathname === "/OCR" && "text-[#EB222A]"
+                  }`}
+                >
+                  OCR for Policy Decoding
+                </li>
+                <li
+                  onClick={() => router.push("/carInspection")}
+                  className={`list-item hover:bg-white hover:rounded-sm px-2 my-2 hover:text-red-700 ${
+                    router.pathname === "/carInspection" && "text-[#EB222A]"
+                  }`}
+                >
+                  Car Inspection
+                </li>
+              </ul>
+            </div>
           </div>
           <div
             className={`font-medium mr-6 inline-block cursor-pointer ${

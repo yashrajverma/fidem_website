@@ -18,7 +18,7 @@ import Footer from "../components/footer";
 import dynamic from "next/dynamic";
 import { COUNTRIES_DATA } from "../data/countries";
 import HEX_DATA from "../data/countries_hex_data.json";
-import Lottie from "react-lottie-player";
+import Lottie from "lottie-react";
 const EARTH_RADIUS_KM = 6371; // km
 const SAT_SIZE = 80; // km
 const TIME_STEP = 3 * 1000; // per frame\
@@ -28,7 +28,6 @@ import InfraLottie from "../public/lottie/Fidem website files/Infrastructure.jso
 import MobilityLottie from "../public/lottie/Fidem website files/Mobility.json";
 import ProductsLottie from "../public/lottie/Fidem website files/Products.json";
 import UnderWritingLottie from "../public/lottie/Fidem website files/Underwriting.json";
-import Image from "next/image";
 const getRandomCountry = () => {
   return COUNTRIES_DATA[Math.floor(Math.random() * COUNTRIES_DATA.length)];
 };

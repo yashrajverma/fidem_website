@@ -6,7 +6,7 @@ import Header from "../components/header";
 import { IoLogoApple, IoLogoGooglePlaystore, IoWarning } from "react-icons/io5";
 import Footer from "../components/footer";
 import Mobility from "../public/lottie/Fidem website files/Mobility.json";
-import Lottie from "react-lottie-player";
+import Lottie from "lottie-react";
 const OCR = () => {
   return (
     <div className="w-full -z-30 bg-[#233c6d] overflow-hidden">
@@ -16,7 +16,7 @@ const OCR = () => {
         <div className="md:w-[70%] w-full flex flex-col md:mt-0 mt-[7rem] md:items-center md:justify-center">
           <div className="md:pl-36 px-3 flex flex-col">
             <div className="inline-block max-w-xl text-left  leading-[3rem] md:leading-none font-montserrat text-4xl md:text-[55px] font-bold">
-              OCR
+              OCR for Policy Decoding
             </div>
 
             <div className="inline-block pb-6 max-w-xl mt-8 font-montserrat text-base md:text-left">

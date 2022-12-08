@@ -204,7 +204,7 @@ const AboutUs = () => {
                 />
               </a>
             </div>
-            <div className="mx-auto text-red-600 text-sm text-xl flex justify-center align-middle text-center">
+            <div className="mx-auto text-red-600 text-xs text-xl flex justify-center align-middle text-center">
               Founder & CEO
             </div>
           </div>
@@ -231,7 +231,7 @@ const AboutUs = () => {
                 />
               </a>
             </div>
-            <div className="mx-auto text-red-600 text-sm text-xl flex justify-center align-middle text-center">
+            <div className="mx-auto text-red-600 text-xs text-xl flex justify-center align-middle text-center">
               Mentor & Advisor
             </div>
           </div>
@@ -258,7 +258,7 @@ const AboutUs = () => {
                 />
               </a>
             </div>
-            <div className="mx-auto text-red-600 text-sm text-xl flex justify-center align-middle text-center">
+            <div className="mx-auto text-red-600 text-xs text-xl flex justify-center align-middle text-center">
               Mentor & Advisor
             </div>
           </div>
@@ -285,7 +285,7 @@ const AboutUs = () => {
                 />
               </a>
             </div>
-            <div className="mx-auto text-red-600 text-sm text-xl flex justify-center align-middle text-center">
+            <div className="mx-auto text-red-600 text-xs text-xl flex justify-center align-middle text-center">
               CoFounder & CTO
             </div>
           </div>
@@ -313,14 +313,14 @@ const AboutUs = () => {
                 />
               </a>
             </div>
-            <div className="mx-auto text-red-600 text-sm text-xl flex justify-center align-middle text-center">
+            <div className="mx-auto text-red-600 text-xs text-xl flex justify-center align-middle text-center">
               Tech Consultant
             </div>
           </div>
         </div>
       </div>
 
-      <section>
+      {/* <section>
         <div className="flex justify-center font-bold text-white text-2xl pt-10 ">
           <h>Operating Principles</h>
         </div>
@@ -404,7 +404,7 @@ const AboutUs = () => {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </div>

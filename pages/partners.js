@@ -72,7 +72,7 @@ const services = [
 ];
 
 const brands = [
-  "logourl",
+  "../client/client (1).webp",
   "logourl",
   "logourl",
   "logourl",
@@ -138,30 +138,45 @@ const Products = () => {
             <br />
             use Fidem.ai's software.
           </p>
-          <div className="grid mt-14 md:w-[60%] gap-2 mx-auto grid-cols-2 md:grid-cols-4 place-items-center">
+          <div className="flex mt-14 md:w-[80%] mx-auto justify-center align-middle flex-wrap">
             <img
-              className="w-[180px] h-[75px] overflow-hidden"
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
               alt=""
-              src="../owsome.png"
+              src="../client/client (1).webp"
             />
             <img
-              className="w-[180px] h-[75px] overflow-hidden"
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
               alt=""
-              src="../owsome.png"
+              src="../client/client (2).webp"
             />
             <img
-              className="w-[180px] h-[75px] overflow-hidden"
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
               alt=""
-              src="../owsome.png"
+              src="../client/client (3).webp"
             />
             <img
-              className="w-[180px] h-[75px] overflow-hidden"
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
               alt=""
-              src="../owsome.png"
+              src="../client/client (4).webp"
+            />
+            <img
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
+              alt=""
+              src="../client/client (5).jpg"
+            />
+            <img
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
+              alt=""
+              src="../client/client (6).webp"
+            />
+            <img
+              className="w-[17%] h-[120px] rounded overflow-hidden bg-white m-4"
+              alt=""
+              src="../client/client (7).webp"
             />
           </div>
 
-          <div className="flex justify-center mt-6">
+          {/* <div className="flex justify-center mt-6">
             {new Array(+brandLength).fill(1).map((ele, index) => (
               <div
                 key={index}
@@ -171,7 +186,7 @@ const Products = () => {
                 onClick={() => setCurrentTab(index)}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
