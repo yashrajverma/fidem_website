@@ -5,7 +5,6 @@ import Link from "next/link";
 import Header from "../components/header";
 import { IoLogoApple, IoLogoGooglePlaystore, IoWarning } from "react-icons/io5";
 import Footer from "../components/footer";
-import Mobility from "../public/lottie/Fidem website files/Mobility.json";
 
 const CarInspection = () => {
   return (
