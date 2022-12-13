@@ -40,14 +40,21 @@ function Index() {
   const [satData, setSatData] = useState();
   const [globeRadius, setGlobeRadius] = useState();
   const [time, setTime] = useState(new Date());
+  const [windowSize, setWindowSize] = useState({
+    width: "40%",
+    height: "40%",
+  });
   useEffect(() => {
     // time ticker
     (function frameTicker() {
       requestAnimationFrame(frameTicker);
       setTime((time) => new Date(+time + TIME_STEP));
     })();
+    setWindowSize({
+      width: window.innerWidth / 3,
+      height: window.innerHeight / 2,
+    });
   }, []);
-
   useEffect(() => {
     setHex(HEX_DATA);
   }, []);
@@ -331,7 +338,7 @@ function Index() {
                 src="https://lottie.host/65276de9-f2fe-4594-ac5c-531bd5b5f6ad/Mu6RzDqGRQ.lottie"
                 autoplay
                 loop
-                style={{ height: "30%", width: "40%" }}
+                style={windowSize}
               />
             </div>
           )}
@@ -349,7 +356,7 @@ function Index() {
                 src="https://lottie.host/d4da8510-8e77-4923-89d0-9cef666c66f8/i9zlQ5FSKO.lottie"
                 autoplay
                 loop
-                style={{ height: "30%", width: "30%" }}
+                style={windowSize}
               />
             </div>
           )}
@@ -369,7 +376,7 @@ function Index() {
                 src="https://lottie.host/dc8c4359-ea18-47ec-8391-6c758b4321bb/yh0HucH5lj.lottie"
                 autoplay
                 loop
-                style={{ height: "40%", width: "40%" }}
+                style={windowSize}
               />
             </div>
           )}
@@ -388,7 +395,7 @@ function Index() {
                 src="https://lottie.host/c2f6a48c-3ca5-4a2a-bb47-b4aee1f4f913/jg6HD8w6Jh.lottie"
                 autoplay
                 loop
-                style={{ height: "30%", width: "30%" }}
+                style={windowSize}
               />
             </div>
           )}
@@ -404,7 +411,7 @@ function Index() {
                 src="https://lottie.host/8e7915b1-bb25-482f-a4d9-2f8231ae2407/6aGk3VFJwM.lottie"
                 autoplay
                 loop
-                style={{ height: "40%", width: "50%" }}
+                style={windowSize}
               />
             </div>
           )}
@@ -451,7 +458,7 @@ function Index() {
             src="https://lottie.host/465d4475-7818-471d-8632-0cb9d0fd9046/Fddg8Yckhp.lottie"
             autoplay
             loop
-            style={{ height: "40%", width: "40%" }}
+            style={windowSize}
           />
         </div>
       </section>

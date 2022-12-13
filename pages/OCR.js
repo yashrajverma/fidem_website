@@ -1,12 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "../components/header";
 import { IoLogoApple, IoLogoGooglePlaystore, IoWarning } from "react-icons/io5";
 import Footer from "../components/footer";
 
 const OCR = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: "40%",
+    height: "40%",
+    display: "flex",
+    margin: "auto 0",
+  });
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight / 2,
+      });
+    }
+    if (window.innerWidth > 500) {
+      setWindowSize({
+        width: window.innerWidth / 1.6,
+        height: window.innerHeight,
+      });
+      console.log(window.innerHeight);
+    }
+  }, []);
   return (
     <div className="w-full -z-30 bg-[#233c6d] overflow-hidden">
       <Header />
@@ -41,7 +62,7 @@ const OCR = () => {
           src="https://lottie.host/465d4475-7818-471d-8632-0cb9d0fd9046/Fddg8Yckhp.lottie"
           autoplay
           loop
-          style={{ height: "100%", width: "50%" }}
+          style={windowSize}
         ></dotlottie-player>
       </section>
 

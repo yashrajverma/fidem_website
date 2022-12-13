@@ -1,12 +1,33 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Header from "../components/header";
 import { IoLogoApple, IoLogoGooglePlaystore, IoWarning } from "react-icons/io5";
 import Footer from "../components/footer";
 
 const ClaimManagement = () => {
+  const [windowSize, setWindowSize] = useState({
+    width: "40%",
+    height: "40%",
+    display: "flex",
+    margin: "auto 0",
+  });
+  useEffect(() => {
+    if (window.innerWidth < 500) {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight / 2,
+      });
+    }
+    if (window.innerWidth > 500) {
+      setWindowSize({
+        width: window.innerWidth / 1.6,
+        height: window.innerHeight,
+      });
+      console.log(window.innerHeight);
+    }
+  }, []);
   return (
     <div className="w-full -z-30 bg-[#233c6d] overflow-hidden">
       <Header />
@@ -19,9 +40,8 @@ const ClaimManagement = () => {
             </div>
 
             <div className="inline-block pb-6 max-w-xl mt-8 font-montserrat text-base md:text-left">
-              Fidem.ai is a global leader in Claim Management. Our products
-              offer asset, usage or behavior based protection and end-to-end
-              claims for customers on the move.
+              Fidem.ai is a global leader in Claim Management. ABI Health's
+              robust cloud-based Claim Management system
             </div>
 
             <button className="cursor-pointer p-[14px_51px] w-fit bg-red-600  hover:bg-red-700 rounded-[8px] shadow-[0px_13px_19px_rgba(211,_129,_39,_0.15)] flex md:w-fit box-border items-center justify-center md:items-start md:justify-start">
@@ -41,7 +61,7 @@ const ClaimManagement = () => {
           src="https://lottie.host/465d4475-7818-471d-8632-0cb9d0fd9046/Fddg8Yckhp.lottie"
           autoplay
           loop
-          style={{ height: "100%", width: "50%" }}
+          style={windowSize}
         ></dotlottie-player>
       </section>
 
@@ -52,7 +72,7 @@ const ClaimManagement = () => {
           <img
             className="w-full md:h-[280px] z-10"
             alt=""
-            src="../product1.svg"
+            src="../claim/claim (4).svg"
           />
         </div>
 
@@ -61,17 +81,13 @@ const ClaimManagement = () => {
             1.
           </div>
           <div className="text-3xl text-white mt-3 md:mt-3 z-20 font-bold">
-            Auto Insurance
+            Integrated Rules Engine
           </div>
 
           <div className="text-white z-20 mt-3 md:mt-6">
-            Using photos, video-streaming and computer vision, we can inspect a
-            vehicle in record time to assess value, risk-profile and damages.
-            This allows us to issue policies in real-time upon asset evaluation,
-            and settle claims 10x faster while reducing fraud. Fidem.ai’s Xclaim
-            platform digitizes and automates end-to-end claims. We deliver the
-            best customer experience and improved outcomes over millions of
-            claims for the world's leading insurers.
+            A built-in Rules Engine that recognises what data and documents must
+            be supplied and forbids incomplete submissions. This produces
+            entries that are full, free of errors, and pre-authorized.
           </div>
         </div>
       </section>
@@ -84,17 +100,14 @@ const ClaimManagement = () => {
             2.
           </div>
           <div className="text-3xl text-white mt-3 md:mt-3 z-20 font-bold">
-            Telematics and UBI
+            Ingenious Data Extraction
           </div>
 
           <div className="text-white z-20 mt-3 md:mt-6">
-            Our portfolio of complete IoT solutions combine hardware and
-            software to bring real-time visibility, safety, analytics, and AI to
-            the operations of passenger cars and connected fleets. This
-            underlying data is used to create risk models for behavioral, user
-            and usage based underwriting. A driver score is generated to
-            indicate the risk across a number of components including contextual
-            speed, time of day, smooth driving and road risk.
+            If coupled with Fidem.ai, Fidem.ai's Smart Data Extraction can
+            analyse submitted documents to extract pertinent data from the
+            hospital's information system, eliminating the need for manual
+            entry.
           </div>
         </div>
 
@@ -102,7 +115,7 @@ const ClaimManagement = () => {
           <img
             className="w-full md:h-[250px] z-10"
             alt=""
-            src="../product2.svg"
+            src="../claim/claim (1).svg"
           />
         </div>
       </section>
@@ -114,7 +127,7 @@ const ClaimManagement = () => {
           <img
             className="w-full md:h-[250px] z-10"
             alt=""
-            src="../product3.svg"
+            src="../claim/claim (3).svg"
           />
         </div>
 
@@ -123,17 +136,13 @@ const ClaimManagement = () => {
             3.
           </div>
           <div className="text-3xl text-white mt-3 md:mt-3 z-20 font-bold">
-            DrivebuddyAI
+            Coordinated Emailing
           </div>
 
           <div className="text-white z-20 mt-3 md:mt-6">
-            Our portfolio of complete IoT solutions combine hardware and
-            software to bring real-time visibility, safety, analytics, and AI to
-            the operations of passenger cars and connected fleets. This
-            underlying data is used to create risk models for behavioral, user
-            and usage based underwriting. A driver score is generated to
-            indicate the risk across a number of components including contextual
-            speed, time of day, smooth driving and road risk.
+            By establishing a virtual inbox in your dashboard, Fidem.ai also
+            offers integrated emailing. Emails can be created within the
+            dashboard; the interface is comparable to Microsoft Outlook.
           </div>
         </div>
       </section>
@@ -146,17 +155,13 @@ const ClaimManagement = () => {
             4.
           </div>
           <div className="text-3xl text-white mt-3 md:mt-3 z-20 font-bold">
-            DrivebuddyAI
+            Monitor Claims
           </div>
 
           <div className="text-white z-20 mt-3 md:mt-6">
-            Our white-labelled roadside assistance platform, StrandD provides
-            accident management, e-call, b-call, network management and digital
-            dispatch capabilities to get customers back on the road quickly. A
-            digitally enabled and integrated network that we are able to serve
-            customers anytime of the day. We're working with industry-leading
-            automotive companies, insurers, aggregators and fleets to power
-            their assistance needs.
+            During the reconciliation process, Fidem.ai can keep track of claims
+            that have been fully or partially paid and classify them
+            accordingly. All of the claims can be shown on one screen.
           </div>
         </div>
 
@@ -164,7 +169,7 @@ const ClaimManagement = () => {
           <img
             className="w-full md:h-[250px] z-10"
             alt=""
-            src="../product4.svg"
+            src="../claim/claim (2).svg"
           />
         </div>
       </section>
